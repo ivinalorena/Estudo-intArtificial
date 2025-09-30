@@ -12,6 +12,12 @@ Este repositório tem como objetivo fornecer um guia prático para o estudo e ap
 ## Conteúdo
 
 * **Exemplos de Código**: Implementações práticas de algoritmos de ML, redes neurais e técnicas de IA em Python, com comentários explicativos para facilitar a compreensão.
+* - 🗄️ Fundamentos de SQL para Ciência de Dados  
+   - Consultas básicas (SELECT, WHERE, ORDER BY)  
+   - Agregações (GROUP BY, HAVING)  
+   - Joins entre tabelas  
+   - Criação de datasets para uso em Python
+
 * **Recursos Adicionais**: Links para livros, artigos, cursos online e datasets para quem deseja aprofundar seus estudos além do conteúdo deste repositório.
 
 ## Tópicos Abordados
