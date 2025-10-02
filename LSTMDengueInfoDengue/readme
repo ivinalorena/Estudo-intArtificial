@@ -1,7 +1,7 @@
-# # Previsão de Casos de Dengue com LSTM
+ # Previsão de Casos de Dengue com LSTM
 
 
-# # Descrição e objetivo do Projeto: 
+# Descrição e objetivo do Projeto: 
 Este projeto tem como objetivo analisar e prever a incidência de casos de dengue na cidade de Fortaleza-CE, utilizando uma rede neural recorrente do tipo Long Short-Term Memory (LSTM). 
 Os dados foram obtidos por meio da API InfoDengue.
 
@@ -19,3 +19,4 @@ Os dados foram obtidos por meio da API InfoDengue.
  - O erro absoluto médio (MAE) é a média dos erros absolutos entre os valores reais e previstos
 
  - MAPE: Erro Percentual Absoluto Médio, é uma métrica utilizada para avaliar a precisão de modelos de previsão, especialmente em contextos de previsão de séries temporais. (*Interpretação*: Um valor de MAPE baixo significa que as previsões estão próximas dos valores observados (seu modelo está acertando bem), enquanto um valor alto indica que as previsões estão longe dos valores observados (o modelo precisa ser melhorado).)
+
