@@ -1,0 +1,18 @@
+# Pasta destinada ao estudo de análise de séries temporais com a rede recorrente Long Short Term Memory
+
+## Descrição e objetivo do Projeto: 
+1.  Nesse contexto, com o objetivo de analisar e prever a incidˆencia de casos de dengue, foi desenvolvida uma aplicação de rede neural recorrente (LSTM) utilizando dados da cidade de Fortaleza-CE, disponíveis por meio da plataforma InfoDengue.
+
+##  Fonte dos dados
+ - Os dados utilizados nesta aplicação foram extraídos da API do InfoDengue ([infodengue](https://info.dengue.mat.br))
+
+## A análise foi de desenvolvida nos seguintes estágios:
+- Pré - processamento
+- Após a coleta dos dados houve a normalização dos valores
+-  Para usar LSTM ou outros modelos de séries temporais, é obrigatório criar "janelas” de dados
+- Divisão conjunto de treino e de teste
+
+## Métricas utilizadas: 
+ - Mean squared error: calcula o erro quadrático médio entre os valores reais e previstos.
+ - O erro absoluto médio (MAE) é a média dos erros absolutos entre os valores reais e previstos
+ - MAPE: Erro Percentual Absoluto Médio, é uma métrica utilizada para avaliar a precisão de modelos de previsão, especialmente em contextos de previsão de séries temporais. (*Interpretação*: Um valor de MAPE baixo significa que as previsões estão próximas dos valores observados (seu modelo está acertando bem), enquanto um valor alto indica que as previsões estão longe dos valores observados (o modelo precisa ser melhorado).)
