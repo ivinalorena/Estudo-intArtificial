@@ -72,6 +72,7 @@ select price, condition
 from device_offer
 where os ='iOS';
 
+--EXERCICIOS DO SQLZOO
 --Checking a list The word IN allows us to check if an item is in a list. 
 --The example shows the name and population for the countries 'Brazil', 'Russia', 'India' and 'China'.
 --Show the name and the population for 'Sweden', 'Norway' and 'Denmark'.
@@ -106,12 +107,10 @@ from world
 where name LIKE '%United%';
 
 /* Two ways to be big: A country is big if it has an area of more than 3 million sq km or it has a population of more than 250 million.
-
 Show the countries that are big by area or big by population. Show name, population and area. */
 select name, population, area
 from world
 where area > 3000000 OR population > 250000000;
-
 /* Exclusive OR (XOR). Show the countries that are big by area (more than 3 million) or big by population (more than 250 million) but not both. Show name, population and area.
 Australia has a big area but a small population, it should be included.
 Indonesia has a big population but a small area, it should be included.
@@ -120,3 +119,15 @@ United Kingdom has a small population and a small area, it should be excluded. *
 select name, population, area
 from world
 where population > 250000000 XOR area > 3000000;
+/* 
+Show the name and population in millions and the GDP in billions for the countries of the continent 'South America'. Use the ROUND function 
+to show the values to two decimal places.
+For Americas show population in millions and GDP in billions both to 2 decimal places.
+Millions and billions
+Missing decimals
+For some version of SQL the division of an integer by an integer will be an integer. One way to prevent this 
+is to divide by a floating point number such as 1000000.0. */
+select name, ROUND(population/1000000.0,2) as population_millions,
+ROUND(gdp/1000000000.0,2) as gdp_billions
+from world
+where continent = 'South America';
